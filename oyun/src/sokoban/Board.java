@@ -77,9 +77,9 @@ public class Board extends JPanel {
         Area a;
 
 
-        for (int i = 0; i < level1.length(); i++) {
+        for (int i = 0; i < level2.length(); i++) {
 
-            char item = level1.charAt(i);
+            char item = level2.charAt(i);
 
             if (item == '\n') {
                 y += SPACE;
@@ -137,17 +137,17 @@ public class Board extends JPanel {
                 g.setColor(new Color(0, 0, 0));
                 g.drawString("Completed", 25, 20);
                 level1 =
-                        "    ######\n"
-                      + "    ##   #\n"
-                      + "    ##$  #\n"
-                      + "  ####  $##\n"
-                      + "  ##  $ $ #\n"
-                      + "#### # ## #   ######\n"
-                      + "##   # ## #####  ..#\n"
-                      + "## $  $          ..#\n"
-                      + "###### ### #@##  ..#\n"
-                      + "    ##     #########\n"
-                      + "    ########\n";
+                		              "    ######\n"
+                		            + "    ##   #\n"
+                		            + "    ##$  #\n"
+                		            + "  ####  $##\n"
+                		            + "  ##  $ $ #\n"
+                		            + "#### # ## #   ######\n"
+                		            + "##   # ## #####  ..#\n"
+                		            + "## $  $          ..#\n"
+                		            + "###### ### #@##  ..#\n"
+                		            + "    ##     #########\n"
+                		            + "    ########\n";
                 restartLevel();
                 repaint();
             }
